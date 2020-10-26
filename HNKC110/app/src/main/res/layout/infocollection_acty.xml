@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infocollection_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F5F5F5"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/macty_title_bar_include"
+        layout="@layout/macty_title_bar_include" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/infocollection_tab"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/macty_title_bar_include"
+        android:background="#2F54EB"
+        tl:tl_iconVisible="false"
+        tl:tl_indicator_corner_radius="1.5dp"
+        tl:tl_indicator_height="3dp"
+        tl:tl_indicator_width="20dp"
+        tl:tl_textsize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/infocollection_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infocollection_tab"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@xml/mainview_head_bg"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/collection_base_info"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collection_person"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/collection_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@xml/infocollection_people_et_shape"
+                android:gravity="center"
+                android:hint="@string/Please_enter_collection_person_name"
+                android:padding="3dp"
+                android:textSize="14sp"
+                tools:ignore="Autofill,TextFields" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collection_time"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/collection_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@xml/infocollection_people_et_shape"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collection_addr"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/collection_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@xml/infocollection_people_et_shape"
+                android:gravity="center"
+                android:hint="@string/Please_select_collection_addr"
+                android:padding="3dp"
+                android:textSize="14sp"
+                tl:drawableEndCompat="@xml/map_icon" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/infocollection_people_include" />
+
+    <include layout="@layout/infocollection_vehicle_include" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/map_title_bar_include"
+        layout="@layout/map_title_bar_include" />
+
+    <com.tencent.tencentmap.mapsdk.maps.MapView
+        android:id="@+id/addr_search_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map_title_bar_include" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/keyword_addr_search_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map_title_bar_include"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/addr_marker"
+        android:layout_width="36dp"
+        android:layout_height="39dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/addr_search_marker_icon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/poi_addr_search_rv"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" />
+</RelativeLayout>

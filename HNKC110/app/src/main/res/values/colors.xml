@@ -3,4 +3,10 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="c4967E3">#4967E3</color>
+    <color name="dddddd">#DDDDDD</color>
+    <color name="A5A4AB">#A5A4AB</color>
+    <color name="c2F54EB">#2F54EB</color>
+    <color name="app_color_red">#FF0000</color>
+
 </resources>

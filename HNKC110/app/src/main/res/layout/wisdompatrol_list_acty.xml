@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/macty_title_bar_include" />
+
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/wisdlist_combat_tab"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        tl:tl_bar_color="@color/white"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_color="@color/c2F54EB"
+        tl:tl_indicator_margin_bottom="3dp"
+        tl:tl_indicator_margin_left="3dp"
+        tl:tl_indicator_margin_right="3dp"
+        tl:tl_indicator_margin_top="3dp"
+        tl:tl_textBold="SELECT" />
+
+    <LinearLayout
+        android:id="@+id/wisdlist_task_type_ll"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@xml/wisdompatrol_list_spinner_shpa"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_type"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/wisdlist_task_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/jiantou_xia_icon"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/wisdlist_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

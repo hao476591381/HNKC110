@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:Android="http://schemas.android.com/apk/res/android">
+    <item
+        Android:drawable="@drawable/username_icon"
+        Android:width="30dp"
+        Android:height="30dp"/>
+</layer-list>

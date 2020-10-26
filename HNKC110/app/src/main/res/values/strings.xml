@@ -1,3 +1,69 @@
 <resources>
     <string name="app_name">HNKC110</string>
+    <string name="password_et_hint">请输入密码</string>
+    <string name="username_et_hint">请输入账号</string>
+    <string name="login_str">登录</string>
+    <string name="technical_support">市公安局@湖南科诚技术支持</string>
+
+    <string name="work_status">执勤状态</string>
+    <string name="pdt_number">PDT编号</string>
+    <string name="police_number">警号</string>
+    <string name="unit">单位</string>
+    <string name="quit">退出</string>
+    <string name="digits">0123456789qwertyuioplkjhgfdsazxcvbnm</string>
+
+    <string name="task_type">任务类型</string>
+    <string name="collection_base_info">采集基本信息</string>
+    <string name="collection_number">采集编号</string>
+    <string name="collection_person">采集人员</string>
+    <string name="collection_time">采集时间</string>
+    <string name="collection_addr">采集地点</string>
+
+    <string name="collection_person_info">人员基本信息</string>
+    <string name="collection_vehicle_info">车辆基本信息</string>
+    <string name="submit">提交</string>
+    <string name="type">人员类型</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+    <string name="nationality">国籍</string>
+    <string name="native_place">籍贯</string>
+    <string name="nation">民族</string>
+    <string name="race">种族</string>
+    <string name="id_type">证件类型</string>
+    <string name="id_number">证件号码</string>
+    <string name="date_of_birth">出生日期</string>
+    <string name="person_koseki">人员户籍</string>
+    <string name="contact_information">联系方式</string>
+    <string name="contact_address">联系地址</string>
+    <string name="residential_address">居住地址</string>
+    <string name="Please_enter_your_contact_information">请输入联系方式</string>
+    <string name="Please_enter_collection_person_name">请输入采集人员姓名</string>
+    <string name="Please_select_date_of_birth">请选择出生日期</string>
+    <string name="Please_enter_id_number">请输入证件号码</string>
+    <string name="Please_enter_people_name">请输入姓名</string>
+    <string name="Please_select_people_sex">请选择性别</string>
+    <string name="Please_select_people_nation">请选择民族</string>
+    <string name="Please_enter_people_native_place">请输入籍贯</string>
+    <string name="Please_enter_people_koseki">请输入户籍</string>
+    <string name="Please_select_people_race">请选择种族</string>
+    <string name="Please_select_people_nationality">请选择国籍</string>
+    <string name="Please_select_people_type">请选择人员类型</string>
+    <string name="Please_select_people_id_type">请选择人员证件类型</string>
+    <string name="Please_enter_vehicle_owner_name">请输入车主姓名</string>
+    <string name="Please_select_license_plate_number">请选择车牌号码</string>
+    <string name="Please_select_vehicle_type">请选择车辆类型</string>
+    <string name="Please_select_vehicle_color">请选择车身颜色</string>
+    <string name="Please_select_license_plate_type">请选择车牌种类</string>
+    <string name="vehicle_owner_name">车主姓名</string>
+    <string name="license_plate_number">车牌号码</string>
+    <string name="vehicle_type">车辆类型</string>
+    <string name="vehicle_color">车身颜色</string>
+    <string name="license_plate_type">车牌种类</string>
+
+    <string name="Please_select_collection_addr">请选择采集地址</string>
+    <string name="Please_select_contact_addr">请选择联系地址</string>
+    <string name="Please_select_residential_address">请选择居住地址</string>
+
+    <string name="map_search_keyword_str">搜索地点、公交、路线</string>
+    <string name="confirm_the_location">确认位置</string>
 </resources>

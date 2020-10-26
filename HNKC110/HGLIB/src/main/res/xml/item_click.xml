@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Button正常状态下的背景 -->
+    <item
+        android:drawable="@xml/item_click_loosen_style"
+        android:state_pressed="false" />
+    <!-- Button被按住状态下的背景 -->
+    <item
+        android:drawable="@xml/item_click_press_style"
+        android:state_pressed="true"/>
+</selector>

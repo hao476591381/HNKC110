@@ -3,14 +3,12 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
-
     defaultConfig {
-        applicationId "com.hnkc.ydcj"
-        minSdkVersion 28
+        applicationId "com.hnkc.ydcj.bin"
+        minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -21,14 +19,42 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src/main/assets', 'src/main/assets/'
+            }
+        }
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.github.wuxiaogui593:MyWidgetLib:v1.1'  //红点
+    implementation 'com.yanzhenjie:permission:2.0.0-rc12'
+    /*第三方权限获取框架*/
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'org.xutils:xutils:3.9.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'//导航栏
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-18'//下拉刷新
+    implementation 'com.tencent.map.geolocation:TencentLocationSdk-openplatform:7.2.6' //腾讯地图
+    // 地图库
+    implementation 'com.tencent.map:tencent-map-vector-sdk:4.3.9.6'
+    // 地图组件库，没用到
+    implementation 'com.tencent.map:sdk-utilities:1.0.6'
+
+
+    implementation project(path: ':HGLIB')
 }

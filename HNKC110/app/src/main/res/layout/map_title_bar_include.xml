@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@xml/acty_title_bar_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/title_bar_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@xml/jiantou_zuo_bai"
+            android:contentDescription="@string/desc"
+            android:paddingEnd="30dp"
+            tools:ignore="RtlSymmetry" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/title_bar_return"
+            android:background="@xml/login_et_bg"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/search_icon" />
+
+            <EditText
+                android:id="@+id/title_search_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="@string/map_search_keyword_str"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="Autofill,TextFields" />
+
+            <View
+                android:id="@+id/title_cancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.01"
+                android:background="@drawable/map_search_cancel_icon"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

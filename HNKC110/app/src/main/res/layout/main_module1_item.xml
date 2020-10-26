@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    tools:ignore="UseCompoundDrawables">
+
+    <com.example.myview.imgview.NumImageView
+        android:id="@+id/module_item_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/desc"
+        android:layout_centerHorizontal="true"
+        app:noNumRadius="4dp"
+        app:pointColor="@color/app_color_red" />
+
+    <TextView
+        android:id="@+id/module_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/module_item_iv"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>
